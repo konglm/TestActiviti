@@ -41,8 +41,8 @@ public class DemoProcessTest {
         // 部署流程定义  
         repositoryService  
                 .createDeployment()  
-                .addInputStream("DemoProcess.bpmn",new FileInputStream(realPath + "\\MyProcess.bpmn"))  
-                .addInputStream("DemoProcess.png", new FileInputStream(realPath + "\\MyProcess.png"))  
+                .addInputStream("MyProcess.bpmn",new FileInputStream(realPath + "\\MyProcess.bpmn"))  
+                .addInputStream("MyProcess.png", new FileInputStream(realPath + "\\MyProcess.png"))  
                 .deploy();  
           
         // 启动流程实例  
