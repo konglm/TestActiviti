@@ -18,7 +18,6 @@ import org.activiti.engine.HistoryService;
 import org.activiti.engine.ProcessEngine;  
 import org.activiti.engine.ProcessEngineConfiguration;  
 import org.activiti.engine.RepositoryService;  
-import org.activiti.engine.RuntimeService;  
 import org.activiti.engine.TaskService;  
 import org.activiti.engine.history.HistoricProcessInstance;  
 import org.activiti.engine.runtime.ProcessInstance;  
@@ -36,7 +35,7 @@ public class DemoProcessTest {
           
         // 取得 Activiti 服务  
         RepositoryService repositoryService = processEngine.getRepositoryService();  
-        RuntimeService runtimeService = processEngine.getRuntimeService();  
+//        RuntimeService runtimeService = processEngine.getRuntimeService();  
   
         // 部署流程定义  
         repositoryService  
