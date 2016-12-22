@@ -89,5 +89,6 @@ public class DemoProcessTest {
         HistoryService historyService = processEngine.getHistoryService();  
         HistoricProcessInstance historicProcessInstance = historyService.createHistoricProcessInstanceQuery().processInstanceId(procId).singleResult();  
         System.out.println("Process instance end time: " + historicProcessInstance.getEndTime());  
+        //在Package Explorer里面可以生产部署bar档，生成bar档后到浏览器端去“部署包”
     }  
 } 
